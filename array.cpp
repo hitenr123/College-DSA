@@ -734,3 +734,21 @@ using namespace std;
     // vector <int> arr(5,10);
     // vector <int> arr={1,2,3,4,5};
 // }
+
+
+// Leetcode 1572
+
+int main(){
+    vector <vector <int>> mat = {{5}};
+
+    int r=mat.size();
+    int sum=0;
+
+    for(int i=0;i<r;i++){
+        sum+=mat[i][i]+mat[i][r-i-1];
+    }
+    if(r%2!=0){
+        sum-=mat[(r-1)/2][(r-1)/2];
+    }
+    cout<<sum;
+}
