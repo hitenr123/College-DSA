@@ -738,17 +738,39 @@ using namespace std;
 
 // Leetcode 1572
 
-int main(){
-    vector <vector <int>> mat = {{5}};
+// int main(){
+//     vector <vector <int>> mat = {{5}};
 
-    int r=mat.size();
-    int sum=0;
+//     int r=mat.size();
+//     int sum=0;
 
-    for(int i=0;i<r;i++){
-        sum+=mat[i][i]+mat[i][r-i-1];
-    }
-    if(r%2!=0){
-        sum-=mat[(r-1)/2][(r-1)/2];
-    }
-    cout<<sum;
-}
+//     for(int i=0;i<r;i++){
+//         sum+=mat[i][i]+mat[i][r-i-1];
+//     }
+//     if(r%2!=0){
+//         sum-=mat[(r-1)/2][(r-1)/2];
+//     }
+//     cout<<sum;
+// }
+
+// Leetcode 2114
+
+// int main(){
+//     vector <string> sentences = {"alice and bob love leetcode", "i think so too", "this is great thanks very much"};
+//     int max=0,count=0;
+//     int n=sentences.size();
+
+//     for(int i=0;i<n;i++){
+//         count=0;
+//         for(int j=0;j<sentences[i].size();j++){
+//             if(sentences[i][j]==' '){
+//                 count++;
+//             }
+//         }
+//         count=count+1;
+//         if(count>max){
+//             max=count;
+//         }
+//     }
+//     cout<<max<<endl;
+// }
