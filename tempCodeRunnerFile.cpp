@@ -1,1 +1,1 @@
-arr[0]=num;
+s1=s1+to_string(count);

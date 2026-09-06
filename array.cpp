@@ -1,5 +1,5 @@
 #include <iostream>
-// #include <string>
+#include <string>
 // #include <math.h>
 #include <vector>
 using namespace std;
@@ -773,4 +773,45 @@ using namespace std;
 //         }
 //     }
 //     cout<<max<<endl;
+// }
+
+// Leetcode 443
+
+// int main(){
+//     vector <char> chars = {'a','a','b','b','c','c','c'};
+//     string s;
+//     s=s+chars[0];
+//     int countl=0;
+//     int count=0;
+//     string s1;
+//     int n=chars.size();
+
+//     for(char j: chars){
+//         if(s[countl]!=j){
+//             if(count>1){
+//                 s=s+to_string(count);
+//                 countl+=2;
+//             }else{
+//                 countl++;
+//             }
+//             count=1;
+//             s=s+j;
+//         }
+//         else{
+//             count++;
+//             continue;
+//         }
+//     }
+//     if(count>1){
+//         s=s+to_string(count);
+//     }
+//     int n1=s.size();
+//     cout<<s<<endl;
+//     for(int i=0;i<n;i++){
+//         chars[i]=s[i];
+//     }
+//     for(int i=0;i<n;i++){
+//         cout<<chars[i];
+//     }
+//     cout<<n1<<endl;
 // }
