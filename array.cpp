@@ -580,7 +580,6 @@ using namespace std;
 //     }
 // }
 
-
 // int main(){
 //     vector <int> nums={5,7,7,8,8,10};
 //     int target=8;
@@ -606,8 +605,6 @@ using namespace std;
 //     }
 // }
 
-
-
 // int main(){
 //     vector <vector<int>> matrix;
 //     // matrix = {{1,1,1},{1,0,1},{1,1,1}};
@@ -627,7 +624,6 @@ using namespace std;
 //             }
 //         }
 //     }
-
 
 //     for(int i=0;i<n;i++){
 //         for(int j=0;j<m;j++){
@@ -654,10 +650,7 @@ using namespace std;
 //         cout<<endl;
 //     }
 
-
 // }
-
-
 
 // int main(){
 //     int n;
@@ -686,7 +679,6 @@ using namespace std;
 //         cout<<ans<<" ";
 //     }
 // }
-
 
 // int main(){
 //     int n;
@@ -724,17 +716,15 @@ using namespace std;
 
 // }
 
-
 // Dynamic array
 // Vector
 
 // int main(){
-    // vector <int> arr;
-    // arr.push_back(1);
-    // vector <int> arr(5,10);
-    // vector <int> arr={1,2,3,4,5};
+// vector <int> arr;
+// arr.push_back(1);
+// vector <int> arr(5,10);
+// vector <int> arr={1,2,3,4,5};
 // }
-
 
 // Leetcode 1572
 
@@ -814,4 +804,58 @@ using namespace std;
 //         cout<<chars[i];
 //     }
 //     cout<<n1<<endl;
+// }
+
+// Hacker rank
+
+// int main()
+// {
+//     int n;
+//     int m;
+//     cin>>n>>m;
+
+//     vector <vector<int>> arr(n,vector <int>(m));
+
+//     vector<bool> k(n,false);
+//     vector<bool> l(m,false);
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < m; j++)
+//         {
+//             cin>>arr[i][j];
+//         }
+//     }
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < m; j++)
+//         {
+//             if (arr[i][j] == 0)
+//             {
+//                 k[i] = true;
+//                 l[j] = true;
+//             }
+//         }
+//     }
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < m; j++)
+//         {
+//             if (k[i] == 1 || l[j] == 1)
+//             {
+//                 arr[i][j] = 0;
+//             }
+//         }
+//     }
+
+//     for (int i = 0; i < n; i++)
+//     {
+//         for (int j = 0; j < m; j++)
+//         {
+//             cout<<arr[i][j]<<" ";
+//         }
+//         cout<<endl;
+//     }
 // }
