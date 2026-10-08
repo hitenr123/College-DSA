@@ -1,1 +1,5 @@
-s1=s1+to_string(count);
+for(int i=0;i<N;i++){
+    //     for(int j=0;j<M;j++){
+    //         cout<<arr[i][j];
+    //     }
+    // }

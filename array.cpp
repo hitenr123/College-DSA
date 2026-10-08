@@ -920,3 +920,59 @@ using namespace std;
 
 //     return 0;
 // }
+
+// Contest
+
+// int main() {
+//     int N;
+//     int max=-1,min=10,sum=0;
+//     cin>>N;
+//     while(N>0){
+//         int r=N%10;
+//         if(max<r){
+//             max=r;
+//         }
+//         if(min>r){
+//             min=r;
+//         }
+//         sum=sum+r;
+//         N=N/10;
+//     }
+//     cout<<(max-min)*sum;
+//     return 0;
+// }
+
+// int main(){
+//     int N,num,sum1=0,sum2=0,max=0;
+//     cin>>N;
+//     vector <int> arr;
+//     vector <int> prefix,suffix;
+
+//     for(int i=0;i<N;i++){
+//         cin>>num;
+//         arr.push_back(num);
+//     }
+//     for(int i=0;i<N;i++){
+//         sum1=0,sum2=0;
+//         for(int j=0;j<=i;j++){
+//             sum1=sum1+arr[j];
+//         }
+//         for(int j=i;j<N;j++){
+//             sum2=sum2+arr[j];
+//         }
+//         // cout<<sum1<<" "<<sum2<<endl;
+//         prefix.push_back(sum1);
+//         suffix.push_back(sum2);
+//     }
+
+//     for(int i=0;i<N;i++){
+//         int res=prefix[i]-suffix[i];
+//         if(res<0){
+//             res=-res;
+//         }
+//         if(max<res){
+//             max=res;
+//         }
+//     }
+//     cout<<max;
+// }
